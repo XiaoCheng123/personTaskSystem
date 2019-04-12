@@ -10,6 +10,8 @@ import TaskStatus from './pages/TaskStatus';
 import MemberList from './pages/MemberList';
 import AddMember from './pages/AddMember';
 import ProjectList from './pages/ProjectList';
+import EditProject from './pages/EditProject';
+import BasicLayout from './layouts/BasicLayout';
 import AddProject from './pages/AddProject';
 
 const routerConfig = [
@@ -44,6 +46,11 @@ const routerConfig = [
   {
     path: '/add/project',
     component: AddProject,
+  },
+  {
+    path: '/project/edit',
+    layout: BasicLayout,
+    component: EditProject,
   },
 ];
 
